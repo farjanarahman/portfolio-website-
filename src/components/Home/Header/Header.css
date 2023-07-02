@@ -1,6 +1,83 @@
+
 .name{
     color: blueviolet;
 }
 .btn{
     background-color: blueviolet;
 }
+.about-right{
+    width: 700px;
+}
+.about-left{
+    width: 600px;
+}
+.img{
+    width: 5000px;
+    height: 100px;
+}
+.cont{
+    transition: ease-in-out 8s;
+}
+/* .img-project{
+    object-fit: cover;
+    object-position: top center;
+    transition: all 1s ease-in-out
+}
+.img-project:hover{
+    object-position: bottom center;
+} */
+.image-container {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.img-project {
+    transition: transform 2s ease-in-out;
+}
+
+.image-container:hover .img-project {
+    transform: translateY(-50%);
+}
+/* .card-div{
+    width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+} */
+
+.form-group {
+    margin-bottom: 1rem;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .textarea-field {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    resize: vertical;
+  }
+  
+  /* .submit-button {
+    padding: 0.5rem 1rem;
+    background-color: #3f51b5;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  } */
+  
+  /* .submit-button {
+    background-color: #303f9f;
+  }
+   */
+
