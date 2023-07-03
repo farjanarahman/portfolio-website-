@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header></Header>
-      <h1>My Portfolio</h1>
+      
     </>
   )
 }

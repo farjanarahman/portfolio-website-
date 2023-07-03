@@ -5,7 +5,7 @@ import Lottie from 'lottie-react'
 import { Link } from 'react-scroll'
 import project1 from '../../../assets/images/chef-s-delight.png'
 import project2 from '../../../assets/images/toy.png'
-import project3 from '../../../assets/images/job-website.png'
+import project3 from '../../../assets/images/sportify.png'
 import project4 from '../../../assets/images/AI-universe.png'
 import project5 from '../../../assets/images/calculator.png'
 import project6 from '../../../assets/images/html-project.png'
@@ -137,41 +137,6 @@ const Header = () => {
         </ul>
     );
 
-    const data = [
-        {
-            label: "HTML",
-            value: "html",
-            desc: `It really matters and then like it really doesn't matter.
-          What matters is the people who are sparked by it. And the people 
-          who are like offended by it, it doesn't matter.`,
-        },
-        {
-            label: "React",
-            value: "react",
-            desc: `Because it's about motivating the doers. Because I'm here
-          to follow my dreams and inspire other people to follow their dreams, too.`,
-        },
-        {
-            label: "Vue",
-            value: "vue",
-            desc: `We're not always in the position that we want to be at.
-          We're constantly growing. We're constantly making mistakes. We're
-          constantly trying to express ourselves and actualize our dreams.`,
-        },
-        {
-            label: "Angular",
-            value: "angular",
-            desc: `Because it's about motivating the doers. Because I'm here
-          to follow my dreams and inspire other people to follow their dreams, too.`,
-        },
-        {
-            label: "Svelte",
-            value: "svelte",
-            desc: `We're not always in the position that we want to be at.
-          We're constantly growing. We're constantly making mistakes. We're
-          constantly trying to express ourselves and actualize our dreams.`,
-        },
-    ];
     const form = useRef();
     const sendEmail = (e) => {
         e.preventDefault();
@@ -198,6 +163,8 @@ const Header = () => {
             else setLightMood()
         };
     }
+
+
 
     return (
         <>
@@ -268,7 +235,7 @@ const Header = () => {
                     </MobileNav>
                 </Navbar>
                 <div className="header flex justify-between mx-auto items-center">
-                    <div className="left mt-5 text-left
+                    <div data-aos="fade-down" data-aos-delay="25" className="left mt-5 text-left
                     2xl: ms-24 w-2/5">
                         <h1 className="text-4xl leading-normal md:text-5xl font-semibold md:font-semibold md:leading-normal">
                             Hi, I am <span className="name">Farjana Rahman</span>
@@ -297,7 +264,7 @@ const Header = () => {
                     </div>
                     <div className='about-right me-24'>
                         <h2 className='font-bold text-3xl mb-5 name'>About Me</h2>
-                        <p data-aos="fade-left" className='text-justify md:text-justify md:w-auto w-96'>Hello, I'm <span className='font-bold'>Farjana Rahman</span>, a dedicated web developer. I have a strong passion for transforming ideas into functional websites that not only look visually appealing but also provide a seamless user experience. With my expertise in front-end development, back-end development, and various web technologies, I bring ideas to life and create engaging online experiences. I am constantly learning and staying up-to-date with the latest trends and best practices in web development to deliver high-quality and innovative solutions. Let's collaborate and bring your web projects to the next level!</p>
+                        <p data-aos="fade-left" className='text-justify md:text-justify md:w-auto '>Hello, I'm <span className='font-bold'>Farjana Rahman</span>, a dedicated web developer. I have a strong passion for transforming ideas into functional websites that not only look visually appealing but also provide a seamless user experience. With my expertise in front-end development, back-end development, and various web technologies, I bring ideas to life and create engaging online experiences. I am constantly learning and staying up-to-date with the latest trends and best practices in web development to deliver high-quality and innovative solutions. Let's collaborate and bring your web projects to the next level!</p>
                         <div className='icons flex my-2'>
                             <a href="https://www.linkedin.com/in/farjana-rahman-79085b206?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqzxyqgRlTDmmSWxuOdZ%2Fbw%3D%3D"
                                 target="_blank"
@@ -322,8 +289,8 @@ const Header = () => {
 
                 {/* Skills */}
                 <div id="skills" className="skills mt-10">
-                    <h2 className='font-bold text-3xl mb-5 name text-center'>My Skills</h2>
-                    <div data-aos="fade-up" className="skill-card flex justify-center items-center">
+                    <h2 className='font-bold text-3xl mb-10 name text-center'>My Skills</h2>
+                    <div data-aos="fade-up" className="skill-card grid grid-rows-4 grid-flow-col gap-4 md:flex justify-center items-center">
                         <div className='me-3 text-6xl text-orange-900 hover:scale-110 transition-transform'>
                             <FaHtml5 />
                         </div>
@@ -357,10 +324,10 @@ const Header = () => {
 
 
                 {/* Projects */}
-                <div id="projects" className="project mt-24">
-                    <h2 className='font-bold text-3xl mb-5 name text-center mx-auto'>My Projects</h2>
+                <div id="projects" className="project mt-28">
+                    <h2 className='font-bold text-3xl mb-10 name text-center mx-auto'>My Projects</h2>
                     {/* Cards */}
-                    <div data-aos="flip-up" className="card-div flex justify-between mt-5 mx-64">
+                    <div data-aos="flip-up" className="card-div md:flex justify-between mt-5 md:mx-64">
                         <Card className=" w-96 me-5">
                             {/*  */}
                             <CardHeader floated={false} className="h-80 cont">
@@ -380,7 +347,7 @@ const Header = () => {
                                         {/* <p className='border bg-purple-500 rounded-2xl flex items-center p-2 me-2 text-white'>React Router</p> */}
                                         <p className='border bg-purple-500 rounded-2xl flex items-center p-2 me-2 text-white'>Express.js</p>
                                         <p className='border bg-purple-500 rounded-2xl flex items-center p-2 me-2 text-white'>Firebase</p>
-                                        <p className='border bg-purple-500 rounded-2xl flex items-center p-2 text-white'>MongoDB</p> <br />
+                                        <p className='border bg-purple-500 rounded-2xl flex items-center p-2 text-white'>Tailwind</p> <br />
                                     </div>
                                 </div>
                             </div>
@@ -437,25 +404,24 @@ const Header = () => {
                                     Server
                                 </a>
                             </div>
-                            
+
                         </Card>
-                        <Card className="w-1/3">
+                        <Card className="w-96">
 
                             <CardHeader floated={false} className="h-80 cont">
                                 <div className='image-container'>
-                                    <img className='img-project' src={project4} alt="hello-picture" />
+                                    <img className='img-project' src={project3} alt="hello-picture" />
                                 </div>
                             </CardHeader>
 
                             <div className="mx-auto p-2">
                                 <Typography variant="h4" color="blue-gray" className="mb-2">
-                                    Chef's Delight
+                                    Sportify
                                 </Typography>
                                 <div className=''>
                                     <h4 className='font-bold text-black mb-1'>Technologies</h4>
                                     <div className='flex flex-wrap'>
                                         <p className='border bg-purple-500 rounded-2xl flex items-center p-2 me-2 text-white'>React</p>
-                                        {/* <p className='border bg-purple-500 rounded-2xl flex items-center p-2 me-2 text-white'>React Router</p> */}
                                         <p className='border bg-purple-500 rounded-2xl flex items-center p-2 me-2 text-white'>Express.js</p>
                                         <p className='border bg-purple-500 rounded-2xl flex items-center p-2 me-2 text-white'>Firebase</p>
                                         <p className='border bg-purple-500 rounded-2xl flex items-center p-2 text-white'>MongoDB</p> <br />
@@ -463,66 +429,97 @@ const Header = () => {
                                 </div>
                             </div>
                             <div className='p-3 my-2 flex justify-between'>
-                                <button className='border-2 me-2 border-indigo-600 rounded-2xl px-3 py-2'>
+                                <a href=' https://sportify-academy-6d048.web.app/' target="_blank" rel="noopener noreferrer" className='border-2 me-2 border-indigo-600 text-indigo-600 rounded-2xl px-3 py-2  hover:bg-indigo-500 hover:text-white'>
                                     <FontAwesomeIcon className='me-2' icon={faLink} />
                                     Live Preview
-                                </button>
-                                <button className='border-2 border-indigo-600 rounded-2xl px-3 py-2 me-2'>
+                                </a>
+                                <a href='https://github.com/farjanarahman/summercamp-client' target="_blank" rel="noopener noreferrer" className='border-2 me-2 border-indigo-600 text-indigo-600 rounded-2xl px-3 py-2  hover:bg-indigo-500 hover:text-white'>
                                     <FontAwesomeIcon className='me-2' icon={faGithub} />
-
                                     Client
-                                </button>
-                                <button className='border-2 border-indigo-600 rounded-2xl px-3 py-2'>
+                                </a>
+                                <a href='https://github.com/farjanarahman/summercamp-server' target="_blank" rel="noopener noreferrer" className='border-2 me-2 border-indigo-600 text-indigo-600 rounded-2xl px-3 py-2  hover:bg-indigo-500 hover:text-white'>
                                     <FontAwesomeIcon className='me-2' icon={faGithub} />
-
                                     Server
-                                </button>
+                                </a>
                             </div>
                         </Card>
 
                     </div>
                 </div>
 
+
                 {/* Contact Form */}
-                <div id="contact" className="contact flex justify-between mx-auto items-center mt-10 w-11/12">
-                    <div className="form-left ms-20 w-1/2">
-                        <div>
-                            <h2 className='font-bold text-3xl mb-5 name'>Get In Touch</h2>
+                <div id="contact" className="contact mt-28">
+                    <h2 className='font-bold text-3xl mb-5 name text-center'>Contact Me</h2>
+                    <div className=' flex justify-between mx-auto items-center mt-10 w-11/12'>
+                        <div data-aos="fade-up"
+                            data-aos-duration="500" className="form-left ms-20 w-1/2 ">
+                            <form ref={form} onSubmit={sendEmail} action="">
+                                <div className="form-group">
+                                    <input
+                                        type="text"
+                                        placeholder="Enter Your Name"
+                                        className="input-field"
+                                        name="from_name"
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <input
+                                        type="email"
+                                        placeholder="Your Email"
+                                        className="input-field"
+                                        name="from_email"
+                                    />
+                                </div>
+                                <div className="form-group">
+                                    <textarea
+                                        placeholder="Write Something"
+                                        className="input-field textarea-field"
+                                        name="message"
+                                    ></textarea>
+                                </div>
+                                <div className="form-group">
+                                    <button type="submit" value="Send" className="submit-button bg-indigo-500 text-white py-2 px-3 rounded-lg">Submit</button>
+                                </div>
+                            </form>
                         </div>
-                        <form ref={form} onSubmit={sendEmail} action="">
-                            <div className="form-group">
-                                <input
-                                    type="text"
-                                    placeholder="Enter Your Name"
-                                    className="input-field"
-                                    name="from_name"
-                                />
-                            </div>
-                            <div className="form-group">
-                                <input
-                                    type="email"
-                                    placeholder="Your Email"
-                                    className="input-field"
-                                    name="from_email"
-                                />
-                            </div>
-                            <div className="form-group">
-                                <textarea
-                                    placeholder="Write Something"
-                                    className="input-field textarea-field"
-                                    name="message"
-                                ></textarea>
-                            </div>
-                            <div className="form-group">
-                                <button type="submit" value="Send" className="submit-button bg-indigo-500 text-white py-2 px-3 rounded-lg">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                    <div className="form-right w-96 me-20">
-                        <Lottie animationData={contact}></Lottie>
+                        <div className="hidden form-right md:block w-96 me-20">
+                            <Lottie animationData={contact}></Lottie>
+                        </div>
                     </div>
                 </div>
             </div>
+
+
+            {/* Footer */}
+            <div className=' bg-blue-gray-50 p-10'>
+                <Typography
+                    variant="small"
+                    className="mb-4 text-center font-normal text-blue-gray-900 md:mb-0"
+                >
+                    &copy; 2023 <a href="https://material-tailwind.com/">Farjana Rahman</a>. All
+                    Rights Reserved.
+                </Typography>
+                <div className='icons flex my-2 mx-auto text-center justify-center'>
+                    <a href="https://www.linkedin.com/in/farjana-rahman-79085b206?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BqzxyqgRlTDmmSWxuOdZ%2Fbw%3D%3D"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className='m-1 rounded-full p-3 border text-black border-gray-500 hover:scale-110 transition-transform '>
+                        <FaLinkedinIn />
+                    </a>
+                    <a href='https://github.com/farjanarahman' target='_blank' rel="noopener noreferrer" className='m-1 rounded-full p-3 border text-black border-gray-500 hover:scale-110 transition-transform ' >
+                        <FaGithub />
+
+                    </a>
+                    <a href='https://www.facebook.com/farjana.rahman.5074644/' target='_blank' rel="noopener noreferrer" className='m-1 rounded-full p-3 border text-black border-gray-500 hover:scale-110 transition-transform ' >
+                        <FaFacebookF />
+
+                    </a>
+                </div>
+
+            </div>
+
+
 
 
         </>
